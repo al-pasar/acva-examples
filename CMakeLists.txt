@@ -7,6 +7,6 @@ add_executable(print_version)
 add_subdirectory(acva)
 add_dependencies(print_version acva)
 
-target_include_directories(print_version PRIVATE ${CMAKE_BINARY_DIR}/versioninfo)
+target_include_directories(print_version PRIVATE ${CMAKE_BINARY_DIR}/acva)
 
 target_sources(print_version PRIVATE main.cpp)
